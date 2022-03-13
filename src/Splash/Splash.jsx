@@ -1,7 +1,7 @@
 const Splash = () => {
   return (
-    <section>
-
+    <section className='w-screen h-screen bg-[#e5e5e5]'>
+      <button>Nav</button>
     </section>
   )
 }
