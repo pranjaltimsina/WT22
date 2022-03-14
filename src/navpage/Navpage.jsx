@@ -1,5 +1,3 @@
-import { useContext } from 'react'
-
 import { useMediaQuery } from 'react-responsive'
 
 import Navitem from "./Navitem"

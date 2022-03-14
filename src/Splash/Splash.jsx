@@ -14,7 +14,7 @@ const Splash = ({ navShower }) => {
   return (
     <>
       {isSmallScreen && (
-        <section className='w-full h-screen bg-[#e5e5e5]  bg-contain bg-right bg-no-repeat flex flex-col justify-between overflow-hidden'>
+        <section className='w-full h-screen bg-[#e5e5e5] bg-contain bg-right bg-no-repeat flex flex-col justify-between overflow-hidden'>
           {/* <div className='flex-grow overflow-hidden'>
             <img src={yearLogo} alt='2022' className='h-full' />
           </div> */}
@@ -50,32 +50,26 @@ const Splash = ({ navShower }) => {
               </div>
               <p className='font-Sora text-center mt-10'>A 36 hour hack to ensure and promote women's participation in <br />tech and tech-related events</p>
               <div className='w-full flex flex-row justify-center space-x-10 items-end mt-10'>
-                <div className='w-[20%] h-1/2 border-t-[#ff7f4D] border-t-2'>
+                <div className='w-[15%] h-1/2 border-t-[#ff7f4D] border-t-2'>
                 </div>
                 <button className='bg-[#f34c78] text-white font-DelaGothic w-[1/3]  px-14 py-3' onClick={handleClick}>Register</button>
-                <div className='w-[20%] h-1/2 border-t-[#ff7f4D] border-t-2'>
+                <div className='w-[15%] h-1/2 border-t-[#ff7f4D] border-t-2'>
                 </div>
               </div>
             </div>
-            <div className='w-[40%] relative overflow-hidden flex flex-row items-center'>
-              <div>
-                <div className='flex-grow overflow-hidden'>
-                  <img src={yearLogo} alt='2022' className='h-full' />
+            <div className='w-[40%] overflow-hidden'>
+              <div className='overflow-hidden'>
+                <div className=''>
+                  <img src={yearLogo} alt='2022' className='' />
                 </div>
-                <div className='absolute bottom-[-18px] h-max w-max translate-x-[160px] flex-shrink-0'>
-                  <img src={girlIllustration} alt='Women in Tech' className='w-[320px]' />
-                </div>
+                {/* <div className=''>
+                  <img src={girlIllustration} alt='Women in Tech' className='' />
+                </div> */}
               </div>
               <div>
-                <img src={hamburgerMenu} onClick={() => navShower(true)} alt='menu' className='h-full' />
+                <img src={hamburgerMenu} onClick={() => navShower(true)} alt='menu' className='' />
               </div>
             </div>
-
-              {isSmallScreen && (
-                <div>
-                  <img src={hamburgerMenu} onClick={() => navShower(true)} alt='menu' className='h-full' />
-                </div>
-              )}
           </div>
           <Marquee bgColor='bg-[#5935a4]' textColor='text-white'/>
         </section>

@@ -7,7 +7,7 @@ const FAQ = ({question , answer}) => {
 
 
   return (
-    <div className='bg-[#fdf6ef] w-[80%] md:w-[45%] h-max flex flex-col justify-between duration-500 md:mx-3'>
+    <div className='bg-[#fdf6ef] w-[80%] md:w-[45%] h-max flex flex-col justify-between duration-500'>
       <div className='px-10 py-6 flex flex-row justify-between'>
         <span className='font-Sora'>{question}</span>
         <img onClick={() => setExpand((current) => !current)} src={expand ? downArrow : upArrow} alt='.' />

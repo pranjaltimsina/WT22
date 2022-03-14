@@ -2,8 +2,8 @@ import { useMediaQuery } from "react-responsive"
 
 const Description = () => {
   return (
-    <div className='text-[#fdf6ef] font-Sora w-full p-10 md:w-[50%] md:px-10 md:py-10'>
-      <h2 className='font-DelaGothic text-5xl text-center mb-10 text-[#5935a4]'>About</h2>
+    <div className='text-[#fdf6ef] font-Sora w-full p-10 lg:p-0 lg:w-[50%] lg:pl-20 lg:py-20 lg:pb-20'>
+      <h2 className='font-DelaGothic text-5xl md:text-6xl mb-10 text-[#5935a4]'>About</h2>
       <p>
         <span className='font-bold'>GDSC VIT</span> is a student community at VIT Vellore.
         We strive to bring about technological innovations among students and we do so by providing a
@@ -28,18 +28,18 @@ const Description = () => {
 
 const RightImage = () => {
   return (
-    <div className='w-full h-full sm:w-1/2 sm:p-14 flex justify-center items-center'>
-      <img src='https://picsum.photos/649/649' alt='About' className='w-full' />
+    <div className='w-full h-full lg:w-1/2 lg:p-14 flex justify-center items-center'>
+      <img src='https://picsum.photos/649/649' alt='About' className='w-full lg:w-2/3' />
     </div>
 
   )
 }
 
 const About = () => {
-  const isSmallScreen = useMediaQuery({query: '(max-width: 767px)'})
+  const isSmallScreen = useMediaQuery({query: '(max-width: 1023px)'})
 
   return (
-    <section className = 'flex flex-col md:flex-row w-full md:h-screen overflow-hidden bg-[#f34c78]'>
+    <section className = 'flex flex-col items-center lg:flex-row w-full lg:h-max overflow-hidden bg-[#f34c78] pb-10'>
       {isSmallScreen && (
         <>
           <RightImage />
