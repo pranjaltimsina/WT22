@@ -29,7 +29,8 @@ const Description = () => {
 const RightImage = () => {
   return (
     <div className='w-full h-full lg:w-1/2 lg:p-14 flex justify-center items-center'>
-      <img src='https://picsum.photos/649/649' alt='About' className='w-full lg:w-2/3' />
+      {/* <img src='https://picsum.photos/649/649' alt='About' className='w-full lg:w-2/3' /> */}
+      <div className='w-[1/4] aspect-square bg-gray-400'></div>
     </div>
 
   )
@@ -39,7 +40,7 @@ const About = () => {
   const isSmallScreen = useMediaQuery({query: '(max-width: 1023px)'})
 
   return (
-    <section className = 'flex flex-col items-center lg:flex-row w-full lg:h-max overflow-hidden bg-[#f34c78] pb-10'>
+    <section className = 'flex flex-col items-center lg:flex-row w-full overflow-hidden bg-[#f34c78] pb-10'>
       {isSmallScreen && (
         <>
           <RightImage />
