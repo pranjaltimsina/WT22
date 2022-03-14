@@ -40,7 +40,7 @@ const About = () => {
   const isSmallScreen = useMediaQuery({query: '(max-width: 1023px)'})
 
   return (
-    <section className = 'flex flex-col items-center lg:flex-row w-full overflow-hidden bg-[#f34c78] pb-10'>
+    <section className = 'flex flex-col items-center lg:flex-row w-full lg:h-screen overflow-hidden bg-[#f34c78] pb-10'>
       {isSmallScreen && (
         <>
           <RightImage />
