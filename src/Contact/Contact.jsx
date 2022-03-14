@@ -1,8 +1,9 @@
 const Contact = () => {
   return (
-    <section className="w-screen h-screen">
+    <section className="w-full h-screen bg-[#ff7f4d]">
 
     </section>
 
   )
 }
+export default Contact

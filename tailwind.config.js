@@ -7,6 +7,9 @@ module.exports = {
       fontFamily: {
         DelaGothic: ['Dela Gothic One', 'cursive'],
         Sora: ['Sora', 'sans-serif'],
+      },
+      backgroundImage: {
+        'yearPattern': "url('/src/assets/2022.svg')",
       }
     },
   },
