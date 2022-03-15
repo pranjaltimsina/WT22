@@ -7,6 +7,9 @@ import facebook from '../assets/facebook.svg'
 import twitter from '../assets/twitter.svg'
 import linkedin from '../assets/linkedin.svg'
 
+import illustration from '../assets/illus.png'
+
+
 const Description = () => {
   return (
     <div className='text-[#fdf6ef] font-Sora w-full p-10 pt-16 lg:p-0 lg:w-[50%] lg:pl-28 lg:py-36 lg:pb-20'>
@@ -23,7 +26,7 @@ const Description = () => {
 const RightImage = () => {
   return (
     <div className='w-full h-full lg:w-1/2 lg:p-14 flex justify-center items-center'>
-      <img src='https://picsum.photos/649/649' alt='About' className='w-full lg:w-2/3' />
+      <img src={illustration} alt='About' className='w-full lg:w-2/3' />
     </div>
 
   )

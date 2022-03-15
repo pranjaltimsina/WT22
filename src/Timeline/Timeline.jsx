@@ -30,7 +30,10 @@ const Timeline = ({ myRef }) => {
   // )
 
   return (
-    <section ref={myRef} className='overflow-auto w-screen block'>
+    <section ref={myRef} className='bg-[#fdf6ef] overflow-auto w-screen block'>
+      <h2 className='font-DelaGothic text-5xl md:text-6xl text-[#ff7f4d] p-10 lg:px-20'>
+        Timeline
+      </h2>
       <img src={timeline} alt='Timeline' className='block min-w-min md:min-w-0 max-w-[100vw] ' />
     </section>
   )
