@@ -1,5 +1,7 @@
 import { useMediaQuery } from "react-responsive"
 
+import illustration from '../assets/illus.png'
+
 const Description = () => {
   return (
     <div className='text-[#fdf6ef] font-Sora w-full p-10 lg:p-0 lg:w-[50%] lg:pl-20 lg:py-20 lg:pb-20'>
@@ -28,8 +30,8 @@ const Description = () => {
 
 const RightImage = () => {
   return (
-    <div className='w-full h-full lg:w-1/2 lg:p-14 flex justify-center items-center'>
-      {/* <img src='https://picsum.photos/649/649' alt='About' className='w-full lg:w-2/3' /> */}
+    <div className='w-full h-full lg:w-1/2  lg:p-10 xl:p-24 flex justify-center items-center'>
+      <img src={illustration} alt='About' className='w-full lg:w-2/3' />
       <div className='w-[1/4] aspect-square bg-gray-400'></div>
     </div>
 

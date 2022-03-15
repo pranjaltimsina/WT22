@@ -10,7 +10,10 @@ module.exports = {
       },
       backgroundImage: {
         'yearPattern': "url('/src/assets/2022.svg')",
-      }
+      },
+      colors: {
+        'passive': 'rgba(89, 53, 164, 0.57)',
+      },
     },
   },
   plugins: [],
