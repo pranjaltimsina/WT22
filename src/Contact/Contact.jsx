@@ -25,10 +25,9 @@ const Description = () => {
 
 const RightImage = () => {
   return (
-    <div className='w-full h-full lg:w-1/2 lg:p-14 flex justify-center items-center'>
+    <div className='w-full h-full lg:w-1/2  lg:p-10 xl:p-24 flex justify-center items-center'>
       <img src={illustration} alt='About' className='w-full lg:w-2/3' />
     </div>
-
   )
 }
 
