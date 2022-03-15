@@ -1,10 +1,13 @@
+import React from 'react'
+
 import { useMediaQuery } from 'react-responsive'
 
 import Marquee from '../marquee/Marquee'
 
-import girlIllustration from '../assets/girl.svg'
+import {ReactComponent as GirlIllustration}  from '../assets/girl.svg'
 import yearLogo from '../assets/2022.svg'
 import hamburgerMenu from '../assets/hamburger-menu.svg'
+
 const Splash = ({ navShower }) => {
   const handleClick = () => {
     console.log('Register')
@@ -42,9 +45,9 @@ const Splash = ({ navShower }) => {
       )}
       {!isSmallScreen && (
         <section className='w-full h-screen bg-[#e5e5e5] flex flex-col justify-between overflow-hidden'>
-          <div className='flex flex-row overflow-hidden flex-grow'>
+          <div className='flex flex-row overflow-hidden flex-grow items-center'>
             <div className='w-[60%] flex flex-col items-center'>
-              <div className='pt-40 text-4xl 2xl:text-9xl font-DelaGothic'>
+              <div className='pt-40 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-DelaGothic'>
                 <h2 className='text-[#5935a4]'>Women</h2>
                 <h2 className='text-[#ff7f4d]'>Techies</h2>
               </div>
@@ -57,16 +60,14 @@ const Splash = ({ navShower }) => {
                 </div>
               </div>
             </div>
-            <div className='w-[40%] overflow-hidden'>
+            <div className='w-[40%] overflow-hidden relative'>
               <div className='overflow-hidden'>
                 <div className=''>
-                  <img src={yearLogo} alt='2022' className='' />
+                  <img src={yearLogo} alt='2022' className='h-screen' />
                 </div>
-                {/* <div className=''>
-                  <img src={girlIllustration} alt='Women in Tech' className='' />
-                </div> */}
+                <GirlIllustration className='absolute bottom-[-160px] w-[260px] translate-x-[160px] flex-shrink-0' />
               </div>
-              <div>
+              <div className='absolute top-40 right-[12%]'>
                 <img src={hamburgerMenu} onClick={() => navShower(true)} alt='menu' className='' />
               </div>
             </div>
