@@ -44,12 +44,12 @@ const Splash = ({ navShower }) => {
         </section>
       )}
       {!isSmallScreen && (
-        <section className='w-full h-screen bg-[#e5e5e5] flex flex-col justify-between overflow-hidden'>
+        <section className='w-full h-screen bg-[#e5e5e5] bg-splashPixelated flex flex-col justify-between overflow-hidden'>
           <div className='flex flex-row overflow-hidden flex-grow items-center'>
             <div className='w-[60%] flex flex-col items-center'>
               <div className='pt-40 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-DelaGothic'>
-                <h2 className='text-[#5935a4]'>Women</h2>
-                <h2 className='text-[#ff7f4d]'>Techies</h2>
+                <h2 className='text-[#5935a4] tracking-wide'>Women</h2>
+                <h2 className='text-[#ff7f4d] tracking-tighter'>Techies</h2>
               </div>
               <p className='font-Sora text-center mt-10'>A 36 hour hack to ensure and promote women's participation in <br />tech and tech-related events</p>
               <div className='w-full flex flex-row justify-center space-x-10 items-end mt-10'>
